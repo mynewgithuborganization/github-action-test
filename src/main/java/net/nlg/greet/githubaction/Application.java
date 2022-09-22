@@ -14,18 +14,17 @@
  *  permissions and limitations under the License.
  */
 
-package my.com.digi.csg.backendsimulator.initializer;
+package net.nlg.greet.githubaction;
 
-import org.apache.camel.opentracing.starter.CamelOpenTracing;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.ImportResource;
 
-@ComponentScan(value = "my.com.digi")
+
+//@ComponentScan(value = "my.com.digi")
 @SpringBootApplication
-@CamelOpenTracing
 public class Application {
     // must have a main method spring-boot can run
     public static void main(String[] args) {
