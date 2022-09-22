@@ -1,14 +1,34 @@
-name: Shell Commands 
+name: Build JAVA Application
 
 on: [push]
 
 jobs:
-  run-shell-command:
+  build:
     runs-on: ubuntu-latest
     steps: 
       - name: echo a string
         run: echo "Hello World"
-      - name: multiline script 
+      - name: checkout repo
+        uses: actions/checkout@v3
+      - name: check target folder before
         run: |
-           node -v 
-           npm -v
+           pwd
+           ls ${{ github.workspace }}/target
+      - name: Set up Java version
+        uses: actions/setup-java@v3
+        with:
+          java-version: ${{ env.JAVA_VERSION }}
+          cache: 'maven'
+      - name: Build with Maven
+        run: mvn clean install  
+      - name: Upload artifact for deployment job
+        uses: actions/upload-artifact@v3
+        with:
+          name: java-app
+          path: '${{ github.workspace }}/target/*.jar' 
+      - name: check target folder after
+        run: |
+           pwd
+           ls ${{ github.workspace }}/target
+                      
+   
