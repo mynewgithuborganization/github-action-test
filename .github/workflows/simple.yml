@@ -34,6 +34,7 @@ jobs:
       - name: check target folder after
         run: |
            pwd
-           ls ${{ github.workspace }}/target
+           ls -lrt
+           ls -lrt ${{ github.workspace }}/target
                       
    
