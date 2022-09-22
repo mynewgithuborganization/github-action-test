@@ -1,0 +1,62 @@
+{
+    "ResultOfOperation": {
+        "resultCode": "0",
+        "resultMessage": "Success",
+        "transactionId": "12345s",
+        "beid": "102"
+    },
+    "listOfOrdersReturned": [
+        {
+            "orderChannelRuleId": 180,
+            "createdDate": 1618459494000,
+            "currency": null,
+            "initiatingChannel": "CRM",
+           "isConsentRequired": 1,
+            "isFutureDate": null,
+            "modifiedDate": null,
+            "notificationTemplateId": null,
+            "orderType": "POSTPAID_REGULAR_ACTIVATION",
+            "salesChannel": "My Digi App",
+            "productSubFamily": "SMS",
+            "productClassification": null,
+            "status": "Active",
+            "epcOrderCharge": {
+                "orderChargeId": 5,
+                "orderChannelRuleId": 180,
+                "occCode": null,
+                "orderChargeFee": null,
+                "status": "Active",
+                "createdDate": 1618459494000,
+                "modifiedDate": null
+            },
+            "epcNotificationTemplate": null,
+            "metaInfo": null
+        },
+        {
+            "orderChannelRuleId": 181,
+            "createdDate": 1618459494000,
+            "currency": null,
+            "initiatingChannel": "CRM",
+            "isConsentRequired": 1,
+            "isFutureDate": null,
+            "modifiedDate": null,
+            "notificationTemplateId": null,
+            "orderType": "POSTPAID_REGULAR_ACTIVATION",
+            "salesChannel": "My Digi App",
+            "productSubFamily": "SMS",
+            "productClassification": null,
+            "status": "Active",
+            "epcOrderCharge": {
+                "orderChargeId": 6,
+                "orderChannelRuleId": 181,
+                "occCode": null,
+                "orderChargeFee": null,
+                "status": "Active",
+                "createdDate": 1618459494000,
+                "modifiedDate": null
+            },
+            "epcNotificationTemplate": null,
+            "metaInfo": null
+        }
+    ]
+}
