@@ -13,7 +13,7 @@ jobs:
       - name: check target folder before
         run: |
            pwd
-           ls ${{ github.workspace }}/target
+           ls -lrt
       - name: Set up Java version
         uses: actions/setup-java@v3
         with:
