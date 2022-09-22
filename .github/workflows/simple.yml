@@ -1,5 +1,9 @@
 name: Build JAVA Application
 
+env:
+  AZURE_WEBAPP_NAME: MY_WEBAPP_NAME   # set this to your application's name
+  JAVA_VERSION: '11'
+  
 on: [push]
 
 jobs:
