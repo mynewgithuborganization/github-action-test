@@ -29,7 +29,7 @@ jobs:
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
         with:
-          name: my-app
+          name: my-java-app
           path: '${{ github.workspace }}/target/*.jar' 
       - name: check target folder after
         run: |
@@ -50,7 +50,7 @@ jobs:
       - name: Download artifact from build job
         uses: actions/download-artifact@v3
         with:
-          name: java-app
+          name: my-java-app
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
