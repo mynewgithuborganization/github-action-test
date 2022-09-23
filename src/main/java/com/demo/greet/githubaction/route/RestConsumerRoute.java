@@ -1,4 +1,4 @@
-package net.nlg.greet.githubaction.route;
+package com.demo.greet.githubaction.route;
 
 import org.apache.camel.builder.RouteBuilder;
 

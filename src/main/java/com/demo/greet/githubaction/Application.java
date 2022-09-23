@@ -14,7 +14,7 @@
  *  permissions and limitations under the License.
  */
 
-package net.nlg.greet.githubaction;
+package com.demo.greet.githubaction;
 
 
 import org.springframework.boot.SpringApplication;
